@@ -21,6 +21,9 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 IS_PHONE := true
 
+### FaceUnlockService
+TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
+
 ### PIXEL
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
