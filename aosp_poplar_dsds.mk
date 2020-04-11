@@ -35,7 +35,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=poplar_dsds \
     PRIVATE_BUILD_DESC="G8342-user 9 47.2.A.11.228 1544251862 release-keys"
 
-BUILD_FINGERPRINT := Sony/G8342/G8342:9/47.2.A.11.228/1544251862:user/release-keys
+# Change to pixel 4 April fingerprint
+BUILD_FINGERPRINT := google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys
+
+#BUILD_FINGERPRINT := Sony/G8342/G8342:9/47.2.A.11.228/1544251862:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
