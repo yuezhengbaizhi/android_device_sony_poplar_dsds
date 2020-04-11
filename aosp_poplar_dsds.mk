@@ -15,11 +15,17 @@ TARGET_SCREEN_WIDTH := 1080
 # vendor/lineage/config/common.mk
 TARGET_BOOTANIMATION_HALF_RES := true
 
-### LINEAGE
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+### GApps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
+
+### PIXEL
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_poplar_dsds
+PRODUCT_NAME := aosp_poplar_dsds
 PRODUCT_DEVICE := poplar_dsds
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8342
