@@ -9,7 +9,7 @@ $(call inherit-product, device/sony/poplar_dsds/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 ### BOOTANIMATION
-# vendor/lineage/config/common_full_phone.mk
+# vendor/aosp/config/common_full_phone.mk
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 # vendor/lineage/config/common.mk
@@ -36,6 +36,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="G8342-user 9 47.2.A.11.228 1544251862 release-keys"
 
 BUILD_FINGERPRINT := Sony/G8342/G8342:9/47.2.A.11.228/1544251862:user/release-keys
+
+PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 ifneq ($(LINEAGE_DEV_CERTIFICATE),)
     PRODUCT_DEFAULT_DEV_CERTIFICATE := $(LINEAGE_DEV_CERTIFICATE)
