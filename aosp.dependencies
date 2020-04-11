@@ -11,4 +11,10 @@
     "repository": "cryptomilk/android_device_sony_yoshino",
     "target_path": "device/sony/yoshino"
   }
+  {
+    "repository"  : "packages_apps_PixelLiveWallpaper",
+    "target_path" : "packages/apps/PixelLiveWallpaper",
+    "branch"      : "ten",
+    "remote"      : "pixel-gitlab"
+  }
 ]
